@@ -1,0 +1,42 @@
+
+    <html>
+    <head>
+    	<title>isult generater</title>
+
+
+    	<style type="text/css">
+    		body {background-color: blue}
+    		button {
+    			padding: 2em;
+    			font-size: 2em;
+    			display: block;                                               	        
+                margin: 30vh auto;
+    			border-radius: 10px;
+    		}
+
+    	</style>
+   	
+
+    </head>
+    <body>
+    <button onclick="decide()">Insult me</button>
+      <script>
+	function decide() {
+var items = [ "banana","backpack","Face","computer","pencil","hair"]
+var randomitem = items[Math.floor(Math.random() * 6)]  
+
+var adjictives = [ "crazy","funny","wierd","smelly","ugly","gross"]
+
+var randomadjictives = adjictives[Math.floor(Math.random() * 6)]
+
+var words = [ "brocoli","potato","birds","apples","dead flowers","turtles"]
+                   
+
+var randomwords =words[Math.floor(Math.random() * 6)]                     
+
+
+alert(" Your " + randomitem + " looks like " +  randomadjictives + " " +   randomwords )
+}  
+</script>
+ </body>
+  </html>
